@@ -1,0 +1,117 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    margin-top: 30px;
+    float: right;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+
+}
+nav ul li {
+    display: inline;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+.activo{
+    border-bottom: 4px solid #236477;
+}
+.iniciar{
+    font-weight: bold; 
+}
+.card{
+    margin-left: 55%;
+    margin-top: -38%;
+}
+
+.card img{
+    width: 150px;
+    margin-left: 110px;
+}
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #2F3367;
+}
+
+p{
+    font-size: 15px;
+    color: #2F3367;
+}
+
+.correo {
+    position: relative;
+}
+
+.correo input {
+    padding-left: 30px; 
+    width: 300px; 
+    height: 33px;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid #80BEFC;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+}
+
+.correo i {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    margin-left: 10px;
+    transform: translateY(-50%);
+    color: black;
+}
+.pass {
+    position: relative;
+}
+
+.pass input {
+    padding-left: 30px; 
+    width: 300px; 
+    height: 33px;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid #80BEFC;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+}
+
+.pass i {
+    position: absolute;
+    left: 10px; 
+    top: 50%; 
+    margin-left: 10px;
+    transform: translateY(-50%);
+    color: black;
+}
+
+.enviar{
+    margin-left: 20%;
+    background-color: #0E1B48;
+    border: transparent;
+    width: 12%;
+    height: 30px;
+    color: white;
+    border-radius: 6px;
+}
+
+.enviar i{
+    font-size: 10px;
+}
+
+.olvido{
+    margin-left: 50px;
+}
