@@ -22,11 +22,9 @@ nav ul li a {
     text-decoration: none;
     padding-bottom: 5px;
 }
-.activo{
-    border-bottom: 4px solid #236477;
-}
 .iniciar{
     font-weight: bold; 
+    border-bottom: 4px solid #236477;
 }
 .card{
     margin-left: 55%;

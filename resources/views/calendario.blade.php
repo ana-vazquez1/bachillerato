@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bachillerato Digital Num. 24</title>
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/calendario.css') }}">
 
     </head>
     <body class="inicio">
       <div class="barraInicio">
         <nav>
-            <p> Bachillerato Digital Num. 24 |  21ebh0999q@seppue.gob.mx  | Tel: 2361068938</p>
                 <img src="{{asset('img/logo.png')}}" alt="">
                 <ul>
                     <li><a href="{{route('inicio')}}">Inicio</a></li>

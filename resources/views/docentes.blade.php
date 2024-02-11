@@ -14,7 +14,7 @@
       <div class="barraInicio">
         <nav>
                 <ul>
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="{{(route('inicio'))}}">Inicio</a></li>
                     <li class="activo"><a href="{{ route('docentes') }}">Docentes</a></li>
                     <li><a href="{{ route('calendario') }}">Calendario</a></li>
                     <li class="iniciar"><a href="{{ route('login') }}">Iniciar Sesión</a></li>

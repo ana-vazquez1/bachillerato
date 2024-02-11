@@ -5,7 +5,6 @@ nav{
     background-color: #DAEAF1; 
     height: auto;
 }
-
 nav img{
     width: 90px;
     height: auto;
@@ -48,6 +47,11 @@ nav ul li a {
     margin-top: -330px;
     position: absolute;
 }
+.linea {
+    border-bottom: 2px solid #2F3367; 
+    width: 100%;
+    margin-bottom: 20px; 
+}
 .titulo p{
     color: black;
     margin-left: 45%;
@@ -64,11 +68,51 @@ nav ul li a {
     height: 30px;
     border-radius: 6px;
 }
-.enviar a{
-    text-decoration: none;
-    color: white;
+.ins{
+    color: black;
+}
+.slide{
+    margin-top: 10px;
+}
+.mision, .vision, .valores {
+    background-color: #f0f0f0; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 10px; 
+    margin-left: 200px;
+    width: 300px; 
+    display: inline-block;
+    vertical-align: top; 
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.enviar i{
-    font-size: 10px;
+.vision, .valores{
+    margin-left: 10px;
+}
+.mision h5, .vision h5, .valores h5 {
+    font-size: 20px; 
+    margin-top: 0; 
+    font-weight: bold; 
+}
+.mision p, .vision p {
+    font-size: 14px;
+    line-height: 1.5; 
+}
+
+.galeria img{
+    width: 300px;
+}
+.galeria h3{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacto{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contac{
+    background-color: #D2DAFF;
+    height: 50px;
+    font-family: 'Montserrat', sans-serif;
 }

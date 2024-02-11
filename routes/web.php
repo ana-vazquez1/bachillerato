@@ -21,3 +21,4 @@ Route::get('/inicio', [PagesController::class, 'inicio'])->name('inicio');
 Route::get('/docentes', [PagesController::class, 'docentes'])->name('docentes');
 Route::get('/calendario', [PagesController::class, 'calendario'])->name('calendario');
 Route::get('/login', [PagesController::class, 'login'])->name('login');
+Route::get('/info', [PagesController::class, 'info'])-> name('info');
