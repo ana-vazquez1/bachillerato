@@ -13,15 +13,49 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('usuarios', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
+            $table->string('correo')->unique();
+            $table->string('name')->unique();
             $table->string('password');
-            $table->rememberToken();
             $table->timestamps();
         });
+        Schema::create('maestros', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('id_usuario');
+            $table->foreign('id_usuario')->references('id')->on('usuarios');
+            $table->timestamps();
+        });
+        Schema::create('calificaciones', function (Blueprint $table) {
+            $table->id();
+            $table->float('calificacion');
+            $table->timestamps();
+        });
+        Schema::create('asignaturas', function (Blueprint $table) {
+            $table->id();
+            $table->string('asignatura');
+            $table->unsignedBigInteger('id_maestro');
+            $table->unsignedBigInteger('id_calificacion');
+            $table->foreign('id_maestro')->references('id')->on('maestros');
+            $table->foreign('id_calificacion')->references('id')->on('calificaciones');
+            $table->timestamps();
+        });
+        Schema::create('boletas', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('id_asignatura');
+            $table->foreign('id_asignatura')->references('id')->on('asignaturas');
+            $table->timestamps();
+        });
+        Schema::create('alumnos', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('id_usuario');
+            $table->unsignedBigInteger('id_boleta');
+            $table->foreign('id_usuario')->references('id')->on('usuarios');
+            $table->foreign('id_boleta')->references('id')->on('boletas');
+            $table->timestamps();
+        });
+        
+
     }
 
     /**
@@ -31,6 +65,11 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('usuarios');
+        Schema::dropIfExists('maestros');
+        Schema::dropIfExists('calificaciones');
+        Schema::dropIfExists('asignaturas');
+        Schema::dropIfExists('boletas');
+        Schema::dropIfExists('alumnos');
     }
 };
